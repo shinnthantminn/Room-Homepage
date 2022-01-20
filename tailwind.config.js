@@ -21,6 +21,9 @@ module.exports = {
       },
       letterSpacing:{
         "mama":"0.8em"
+      },
+      screens:{
+        "small":"376px"
       }
     },
   },
