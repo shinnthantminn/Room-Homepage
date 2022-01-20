@@ -18,6 +18,9 @@ module.exports = {
         "w-helf":"59%",
         "160":"170%",
         "170":"-170px"
+      },
+      letterSpacing:{
+        "mama":"0.8em"
       }
     },
   },

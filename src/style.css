@@ -7,15 +7,15 @@
 
 .brand
 {
-    @apply text-Black text-2xl font-semibold mr-0 lg:mr-16;
+    @apply text-white text-2xl font-semibold mr-0 lg:mr-20;
 }
 
 .navItem
 {
-    @apply relative after:content-[''] after:absolute after:bg-black after:w-full after:h-0.9 after:left-0 after:top-7 after:scale-x-0 after:duration-700 hover:after:scale-95;
+    @apply text-Black lg:text-white relative after:content-[''] after:absolute after:bg-white after:w-full after:h-0.9 after:left-0 after:top-7 after:scale-x-0 after:duration-700 hover:after:scale-95;
 }
 
 .menu
 {
-    @apply flex items-center bg-red-900 lg:bg-transparent flex-wrap absolute left-0 px-8 lg:px-0 h-28 lg:h-5 lg:relative justify-between lg:flex w-160 lg:w-fit;
+    @apply flex items-center bg-white lg:bg-transparent flex-wrap absolute left-0 px-8 lg:px-0 h-28 lg:h-5 lg:relative justify-between lg:flex w-160 lg:w-fit;
 }
