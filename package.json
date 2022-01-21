@@ -1,10 +1,10 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,16 @@
     "tailwindcss": "^3.0.15"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.5.2"
-  }
+    "@glidejs/glide": "^3.5.2",
+    "gh-pages": "^3.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinnthantminn/Room-Homepage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinnthantminn/Room-Homepage/issues"
+  },
+  "homepage": "https://github.com/shinnthantminn/Room-Homepage#readme",
+  "description": ""
 }
