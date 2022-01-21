@@ -547,6 +547,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 6 / span 6;
 }
 
+.col-span-10{
+  grid-column: span 10 / span 10;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -607,6 +611,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.25rem;
 }
 
+.h-\[400px\]{
+  height: 400px;
+}
+
 .h-full{
   height: 100%;
 }
@@ -643,12 +651,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-\[500px\]{
-  height: 500px;
+.h-\[110\%\]{
+  height: 110%;
 }
 
-.h-\[400px\]{
-  height: 400px;
+.h-\[322px\]{
+  height: 322px;
+}
+
+.h-fit{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .w-\[59\%\]{
@@ -681,6 +695,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
+.w-\[110\%\]{
+  width: 110%;
+}
+
+.w-\[120\%\]{
+  width: 120%;
+}
+
 .border-collapse{
   border-collapse: collapse;
 }
@@ -699,6 +721,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-10{
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-cols-11{
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-cols-9{
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-8{
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-7{
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .flex-wrap{
@@ -797,18 +839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-hero1{
-  background-image: url('./desktop-image-hero-1.jpg');
-}
-
-.bg-hero2{
-  background-image: url('./desktop-image-hero-2.jpg');
-}
-
-.bg-hero3{
-  background-image: url('./desktop-image-hero-3.jpg');
-}
-
 .bg-mobile1{
   background-image: url('./mobile-image-hero-1.jpg');
 }
@@ -819,6 +849,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-mobile3{
   background-image: url('./mobile-image-hero-3.jpg');
+}
+
+.bg-hero1{
+  background-image: url('./desktop-image-hero-1.jpg');
+}
+
+.bg-hero2{
+  background-image: url('./desktop-image-hero-2.jpg');
+}
+
+.bg-hero3{
+  background-image: url('./desktop-image-hero-3.jpg');
 }
 
 .bg-\[length\:100\%_100\%\]{
@@ -876,6 +918,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .px-24{
   padding-left: 6rem;
   padding-right: 6rem;
@@ -884,11 +935,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 .px-8{
@@ -941,12 +987,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
+.px-11{
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pt-9{
   padding-top: 2.25rem;
 }
 
 .pl-7{
   padding-left: 1.75rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .pt-28{
@@ -981,10 +1041,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2.5rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
 .pr-14{
   padding-right: 3.5rem;
 }
@@ -1005,8 +1061,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 13rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .font-Spartan{
   font-family: 'Spartan', sans-serif;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-xs{
@@ -1022,11 +1087,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-5xl{
@@ -1081,6 +1141,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2;
 }
 
+.leading-6{
+  line-height: 1.5rem;
+}
+
 .tracking-mama{
   letter-spacing: 0.8em;
 }
@@ -1091,6 +1155,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-\[10px\]{
+  letter-spacing: 10px;
+}
+
+.tracking-\[5px\]{
+  letter-spacing: 5px;
 }
 
 .text-darkGray-100{
@@ -1256,10 +1332,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
-  .sm\:h-\[\]{
-    height: ;
-  }
-
   .sm\:h-\[470px\]{
     height: 470px;
   }
@@ -1278,11 +1350,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -1314,6 +1381,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 5 / span 5;
   }
 
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:hidden{
     display: none;
   }
@@ -1324,6 +1407,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[50\%\]{
     width: 50%;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:justify-start{
@@ -1394,8 +1485,44 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: -181px;
   }
 
+  .\32xl\:right-\[-185px\]{
+    right: -185px;
+  }
+
+  .\32xl\:right-\[-190px\]{
+    right: -190px;
+  }
+
+  .\32xl\:right-\[-191px\]{
+    right: -191px;
+  }
+
+  .\32xl\:right-\[-193px\]{
+    right: -193px;
+  }
+
+  .\32xl\:right-\[-195px\]{
+    right: -195px;
+  }
+
+  .\32xl\:right-\[-196px\]{
+    right: -196px;
+  }
+
+  .\32xl\:h-\[322px\]{
+    height: 322px;
+  }
+
   .\32xl\:p-10{
     padding: 2.5rem;
+  }
+
+  .\32xl\:p-12{
+    padding: 3rem;
+  }
+
+  .\32xl\:p-11{
+    padding: 2.75rem;
   }
 
   .\32xl\:px-24{
@@ -1418,18 +1545,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 376px){
-  .small\:h-full{
-    height: 100%;
-  }
-
-  .small\:h-\[500px\]{
-    height: 500px;
-  }
-
-  .small\:h-\[550px\]{
-    height: 550px;
-  }
-
   .small\:bg-hero1{
     background-image: url('./desktop-image-hero-1.jpg');
   }
