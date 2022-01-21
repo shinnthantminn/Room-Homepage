@@ -36,5 +36,15 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [(function({ addUtilities, addComponents, e, prefix, config }) {
+    const newUtilities = {
+      '.grid-row': {
+        gridRow: '1'
+      },
+      '.grid-row-none':{
+        gridRow: "auto"
+      }
+    }
+    addUtilities(newUtilities)
+  })],
 }

@@ -527,6 +527,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 12 / span 12;
 }
 
+.col-span-10{
+  grid-column: span 10 / span 10;
+}
+
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+
 .col-span-3{
   grid-column: span 3 / span 3;
 }
@@ -539,16 +547,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 7 / span 7;
 }
 
-.col-span-5{
-  grid-column: span 5 / span 5;
-}
-
 .col-span-6{
   grid-column: span 6 / span 6;
 }
 
-.col-span-10{
-  grid-column: span 10 / span 10;
+.row-span-6{
+  grid-row: span 6 / span 6;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
 }
 
 .mb-8{
@@ -647,18 +655,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.h-\[100\%\]{
-  height: 100%;
-}
-
-.h-\[110\%\]{
-  height: 110%;
-}
-
-.h-\[322px\]{
-  height: 322px;
-}
-
 .h-fit{
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -675,6 +671,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full{
   width: 100%;
+}
+
+.w-\[120\%\]{
+  width: 120%;
 }
 
 .w-w-helf{
@@ -695,14 +695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.w-\[110\%\]{
-  width: 110%;
-}
-
-.w-\[120\%\]{
-  width: 120%;
-}
-
 .border-collapse{
   border-collapse: collapse;
 }
@@ -719,12 +711,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-10{
   grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-11{
@@ -927,6 +919,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.75rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-24{
   padding-left: 6rem;
   padding-right: 6rem;
@@ -992,9 +989,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.75rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-14{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .pt-9{
@@ -1007,6 +1004,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-16{
   padding-top: 4rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-28{
@@ -1059,10 +1064,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-52{
   padding-bottom: 13rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
 }
 
 .font-Spartan{
@@ -1145,6 +1146,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+.tracking-\[0\.9em\]{
+  letter-spacing: 0.9em;
+}
+
+.tracking-\[5px\]{
+  letter-spacing: 5px;
+}
+
 .tracking-mama{
   letter-spacing: 0.8em;
 }
@@ -1159,14 +1168,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-wide{
   letter-spacing: 0.025em;
-}
-
-.tracking-\[10px\]{
-  letter-spacing: 10px;
-}
-
-.tracking-\[5px\]{
-  letter-spacing: 5px;
 }
 
 .text-darkGray-100{
@@ -1221,6 +1222,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.grid-row{
+  grid-row: 1;
+}
+
+.grid-row-none{
+  grid-row: auto;
 }
 
 .brand{
@@ -1286,6 +1295,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (min-width: 640px){
+  .menu{
+    width: 182%;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1354,6 +1369,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
   .md\:h-\[550px\]{
     height: 550px;
   }
@@ -1362,6 +1381,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:grid-row{
+    grid-row: 1;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1369,8 +1392,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 0px;
   }
 
-  .lg\:right-\[-77px\]{
-    right: -77px;
+  .lg\:right-\[-118px\]{
+    right: -118px;
   }
 
   .lg\:col-span-7{
@@ -1389,14 +1412,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 4 / span 4;
   }
 
-  .lg\:col-span-6{
-    grid-column: span 6 / span 6;
-  }
-
-  .lg\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:hidden{
     display: none;
   }
@@ -1409,25 +1424,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:justify-start{
     justify-content: flex-start;
   }
 
-  .lg\:p-3{
-    padding: 0.75rem;
+  .lg\:p-\[1\.45rem\]{
+    padding: 1.45rem;
   }
 
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:pt-14{
@@ -1442,28 +1454,41 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-14{
+    padding-bottom: 3.5rem;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .lg\:grid-row-none{
+    grid-row: auto;
+  }
 }
 
 @media (min-width: 1280px){
-  .xl\:right-\[-107px\]{
-    right: -107px;
+  .xl\:right-\[-149px\]{
+    right: -149px;
   }
 
   .xl\:w-\[80\%\]{
     width: 80%;
   }
 
-  .xl\:p-5{
-    padding: 1.25rem;
+  .xl\:p-\[1\.95rem\]{
+    padding: 1.95rem;
   }
 
   .xl\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .xl\:px-11{
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 
   .xl\:pt-20{
@@ -1474,6 +1499,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 8rem;
   }
 
+  .xl\:pb-16{
+    padding-bottom: 4rem;
+  }
+
+  .xl\:pt-16{
+    padding-top: 4rem;
+  }
+
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1481,66 +1514,48 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1536px){
-  .\32xl\:right-\[-181px\]{
-    right: -181px;
-  }
-
-  .\32xl\:right-\[-185px\]{
-    right: -185px;
-  }
-
-  .\32xl\:right-\[-190px\]{
-    right: -190px;
-  }
-
-  .\32xl\:right-\[-191px\]{
-    right: -191px;
-  }
-
-  .\32xl\:right-\[-193px\]{
-    right: -193px;
-  }
-
-  .\32xl\:right-\[-195px\]{
-    right: -195px;
-  }
-
   .\32xl\:right-\[-196px\]{
     right: -196px;
-  }
-
-  .\32xl\:h-\[322px\]{
-    height: 322px;
-  }
-
-  .\32xl\:p-10{
-    padding: 2.5rem;
-  }
-
-  .\32xl\:p-12{
-    padding: 3rem;
   }
 
   .\32xl\:p-11{
     padding: 2.75rem;
   }
 
-  .\32xl\:px-24{
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .\32xl\:px-28{
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
-  .\32xl\:pt-28{
-    padding-top: 7rem;
+  .\32xl\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
-  .\32xl\:pb-52{
-    padding-bottom: 13rem;
+  .\32xl\:pt-32{
+    padding-top: 8rem;
+  }
+
+  .\32xl\:pb-56{
+    padding-bottom: 14rem;
+  }
+
+  .\32xl\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .\32xl\:pb-0{
+    padding-bottom: 0px;
   }
 
   .\32xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
