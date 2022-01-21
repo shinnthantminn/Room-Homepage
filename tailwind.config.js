@@ -24,6 +24,15 @@ module.exports = {
       },
       screens:{
         "small":"376px"
+      },
+      backgroundImage:{
+        "hero1":"url('./desktop-image-hero-1.jpg')",
+        "hero2":"url('./desktop-image-hero-2.jpg')",
+        "hero3":"url('./desktop-image-hero-3.jpg')",
+
+        "mobile1":"url('./mobile-image-hero-1.jpg')",
+        "mobile2":"url('./mobile-image-hero-2.jpg')",
+        "mobile3":"url('./mobile-image-hero-3.jpg')",
       }
     },
   },
