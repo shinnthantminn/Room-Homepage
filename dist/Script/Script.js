@@ -12,6 +12,10 @@ close.addEventListener("click",e=>{
     showHide(e);
 });
 
+blur.addEventListener("click",e=>{
+    showHide(e);
+})
+
 function showHide(x) {
     x.preventDefault();
 
