@@ -1,20 +1,27 @@
 const menu = document.getElementById("menu");
 const menuBtn = document.getElementById("menuBtn");
 const close = document.getElementById("close");
+const blur = document.getElementById("blur");
+const forStuck = document.getElementById("forStuck");
 
-menuBtn.addEventListener("click",e=>{
-    showHide(e);
-});
+click(menuBtn);
+click(close);
+click(blur);
 
-close.addEventListener("click",e=>{
-    showHide(e);
-});
+function click(x) {
+    x.addEventListener("click",e=>{
+        showHide(e);
+    })
+}
 
 function showHide(x) {
     x.preventDefault();
 
     menu.classList.toggle("top-170");
     menu.classList.toggle("top-0");
+    blur.classList.toggle("hidden")
+    forStuck.classList.toggle("absolute");
+    forStuck.classList.toggle("fixed")
 }
 
 /*for hover svg changes fill other color*/
@@ -35,5 +42,3 @@ new Glide('.glide',{
     autoplay:5000,
     gap:0
 }).mount()
-
-
