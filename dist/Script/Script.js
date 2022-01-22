@@ -4,17 +4,15 @@ const close = document.getElementById("close");
 const blur = document.getElementById("blur");
 const forStuck = document.getElementById("forStuck");
 
-menuBtn.addEventListener("click",e=>{
-    showHide(e);
-});
+click(menuBtn);
+click(close);
+click(blur);
 
-close.addEventListener("click",e=>{
-    showHide(e);
-});
-
-blur.addEventListener("click",e=>{
-    showHide(e);
-})
+function click(x) {
+    x.addEventListener("click",e=>{
+        showHide(e);
+    })
+}
 
 function showHide(x) {
     x.preventDefault();
