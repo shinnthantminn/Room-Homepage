@@ -13,11 +13,11 @@
     <!--for slider-->
     <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
-<body class="font-Spartan h-screen">
+<body class="font-Spartan h-screen relative">
 
 
 <!--nav-->
-<div class="absolute z-10 top-0 pt-9 pl-7 lg:pt-14 lg:pl-14 w-[59%] sm:w-[55%]">
+<div id="forStuck" class="absolute z-10 top-0 pt-9 pl-7 lg:pt-14 lg:pl-14 w-[59%] sm:w-[55%]">
     <nav class="flex items-center flex-wrap justify-between lg:justify-start">
 
         <a href="" class="w-5 h-5 block lg:hidden" id="menuBtn">
@@ -110,7 +110,6 @@
 </div>
 
 <!--footer-->
-
 <footer class="grid grid-cols-10 z-0">
 
     <div class="col-span-10 md:col-span-5 lg:col-span-3 h-full">
@@ -141,6 +140,9 @@
 
     </div>
 </footer>
+
+<!--for backdrop filter-->
+<div id="blur" class="fixed top-0 hidden w-full h-full bg-transparent backdrop-blur-sm z-0"></div>
 
 <!--for slider-->
 <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
